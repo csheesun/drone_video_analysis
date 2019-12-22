@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Drone Video Analysis</title>
+    <style>
+      table {
+        width: 100%;
+      }
+      table, th, td {
+        border: 1px solid #bcbcbc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Drone Video Analysis</h1>
+    <img src="{{ url_for('video_feed') }}" width="1000" height="800">
+    <table>
+      <caption>Statistics</caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Friends</th>
+          <th>Enemy</th>
+          <th>Undetermined</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>People</th>
+          <td>1</td>
+          <td>3</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <th>Buildings</th>
+          <td>1</td>
+          <td>4</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <th>Vehicles</th>
+          <td>3</td>
+          <td>5</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
